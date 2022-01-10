@@ -1,0 +1,72 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+} /* 일시정지, 재생 버튼 */ 
+video::-webkit-media-controls-play-button {
+    display: none !important;
+} /* 재생 슬라이드..? */ 
+video::-webkit-media-controls-timeline {
+    display: none !important;
+} /* 현재 진행 시간 */ 
+video::-webkit-media-controls-current-time-display{
+    display: none !important;
+} /* 전체 시간 */ 
+video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+} /* 음소거 버튼 */ 
+video::-webkit-media-controls-mute-button {
+    display: none !important;
+} /* 볼륨 조절 슬라이드 */ 
+video::-webkit-media-controls-volume-slider {
+    display: none !important;
+}
+.logotext{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: default;
+}
+.text{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: default;
+}
+.logotext h2{
+    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    font-family: 'Jeju Gothic', sans-serif;
+    font-size: 6em;
+    text-align: justify;
+    color: white;
+    z-index: 1;
+    mix-blend-mode: overlay;
+}
+.text h4{
+    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    font-family: 'Jeju Gothic', sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    color: white;
+    z-index: 3;
+    mix-blend-mode: overlay;
+}
+.li {
+    line-height:50%
+}
